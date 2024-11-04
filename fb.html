@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Signup Form -->
+<div id="signup-form">
+    <h2>Sign Up</h2>
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="text" id="phonenumber" placeholder="Phone Number" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="signup()">Sign Up</button>
+</div>
+
+<!-- Login Form -->
+<div id="login-form" style="display: none;">
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Email" required />
+    <input type="password" id="login-password" placeholder="Password" required />
+    <button onclick="login()">Login</button>
+</div>
+<div id="dashboard">
+    <h2>Dashboard</h2>
+    <div id="create-post">
+        <textarea id="post-content" placeholder="Write your post..."></textarea>
+        <button onclick="createPost()">Create Post</button>
+    </div>
+    <h3>Your Posts</h3>
+    <div id="posts-container"></div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
